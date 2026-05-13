@@ -1,9 +1,20 @@
-/* Custom Fitness Aesthetics */
-.rounded-quiz {
-    border-radius: 2.5rem; /* The "flowy" look you prefer */
+/* Premium Fitness Aesthetic */
+body { 
+    background-color: #fcfbf7; 
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    color: #0f172a;
 }
 
-.shimmer-btn {
+/* Custom Design Tokens */
+.rounded-quiz { border-radius: 3rem; }
+.glass-effect {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* High-Engagement Shimmer */
+.shimmer-cta {
     position: relative;
     overflow: hidden;
     background: linear-gradient(90deg, #059669, #10b981, #059669);
@@ -15,11 +26,12 @@
     to { background-position: 200% center; }
 }
 
-.fade-in {
-    animation: fadeIn 0.5s ease-in;
+/* Mobile-First Animations */
+.fade-up {
+    animation: fadeUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
